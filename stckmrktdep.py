@@ -11,7 +11,7 @@ st.title("🍎 Apple Stock Forecasting using SARIMA")
 # --- Load the CSV file ---
 @st.cache_data
 def load_data():
-    df = pd.read_csv("D:\Data science April2025\P584 Stock Market Analytics project3\AAPL (4) (3).csv")
+    df = pd.read_csv("D:\\Data science April2025\\P584 Stock Market Analytics project3\\AAPL (4) (3).csv")
     # ✅ Parse date in DD-MM-YYYY format
     df['Date'] = pd.to_datetime(df['Date'], dayfirst=True, errors='coerce')
     df = df.dropna(subset=['Date'])  # remove any unparsable rows
